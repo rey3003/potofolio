@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title> Website POrto Folio</title>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        img-src 'self' https://image.example.com; 
+        script-src 'self';
+        style-src 'self' 'unsafe-inline';
+        connect-src 'self';
+        font-src 'self';
+    ">
+    </header>
+    <body>
+        <main>
+            <section class="description">
+                <img class="photo-profile" src="image/profile.png" alt="Photoprofile">
+                <h1 class="header">Raihan Marciano</h1>
+                <p class="paragraph">Perkenalkan nama saya Raihan Marciano dengan NPM 51422356,saya mahasiswa Gunadarma jurusan informatika di tingkat 3 dengan kelas 3IA09</p>
+
+            </section>
+            <section class="links">
+                <ul>
+                    <li>
+                        <a href="https://github.com/rey3003" target="_blank">
+                            <img src="image/github.png" alt="github">
+                            Github
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/errrrlord" target="_blank">
+                            <img src="image/instagram.png" alt="instagram">
+                            instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_blank">
+                            <img src="image/linkedin.png" alt="linkedin">
+                            linkedin
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <script>
+            function confirmLink(platform) {
+                const userConfirmed = confirm(`Apakah Anda yakin ingin membuka halaman ${platform}?`);
+                if (!userConfirmed) {
+                    event.preventDefault(); // Membatalkan navigasi jika pengguna menekan "Batal"
+                }
+            }
+        </script>
+    </body>
+</html>
